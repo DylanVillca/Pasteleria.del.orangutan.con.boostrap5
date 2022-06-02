@@ -55,3 +55,39 @@ footer{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
 }
+.hola{
+    flex-direction: column;
+}
+.card{
+    height: 20vh;
+    border: none;
+}
+.card-img-top{
+    width: 70%;
+    height: 30vh;
+}
+.mapa{
+    margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+    .hola.navbar,
+    .hola .navbar-collapse {
+      flex-direction: column;
+    }
+    .hola .navbar-expand-lg .navbar-nav {
+      flex-direction: column;
+    }
+    .hola {
+      width: 20%;
+      height: 50vh;
+      align-items: flex-start;
+    }
+    .hola .navbar-brand {
+      margin-left: 0.5em;
+      padding-bottom: 0;
+      border-bottom: 4px solid #464646;
+    }
+    .hola form input {
+      margin-bottom: 0.7em;
+    }
+  }
