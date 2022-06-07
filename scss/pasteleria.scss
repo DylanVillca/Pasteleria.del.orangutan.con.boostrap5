@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+$color-main: #83C457;
+$color-text: #441B0A;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+}
+.color-verde{
+    background-color: $color-main;
+}
+h2{
+    font-family: none;
+}
+p{
+    color: $color-text;
+}
+h1{
+    color: $color-text;
+}
+.boton{
+    margin: 0px auto;
+}
+.centrado-boton{
+    margin-top: 20px;
+}
+footer{
+    background-image: url(../imagenes/footer.png);
+    max-width: 2400px;
+    height: 600px;
+    background-size: cover;
+    background-position: center bottom;
+    flex-wrap: wrap;
+}
+.logo{
+    max-width: 200px;
+}
+.redes{
+    font-family: 'Square Peg', cursive;
+    text-decoration: none;
+    font-size: 10px;
+    color: $color-text;
+    a{
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: center;
+        background: $color-text;
+        color: $color-main;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+    }
+}
+
+.hola{
+    flex-direction: column;
+}
+.card{
+    height: 20vh;
+    border: none;
+}
+.card-img-top{
+    width: 70%;
+    height: 30vh;
+}
+.mapa{
+    margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+    .hola.navbar,
+    .hola .navbar-collapse {
+      flex-direction: column;
+    }
+    .hola .navbar-expand-lg .navbar-nav {
+      flex-direction: column;
+    }
+    .hola {
+      width: 20%;
+      height: 50vh;
+      align-items: flex-start;
+    }
+    .hola .navbar-brand {
+      margin-left: 0.5em;
+      padding-bottom: 0;
+      border-bottom: 4px solid #464646;
+    }
+    .hola form input {
+      margin-bottom: 0.7em;
+    }
+  }
