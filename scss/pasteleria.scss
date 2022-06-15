@@ -8,6 +8,11 @@ $color-text: #441B0A;
     font-family: 'Square Peg', cursive;
     font-size: 30px;
 }
+@mixin sizes ($height, $width, $bcolor) {
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+}
 .color-verde{
     background-color: $color-main;
 }
@@ -33,6 +38,7 @@ footer{
     background-size: cover;
     background-position: center bottom;
     flex-wrap: wrap;
+    @extend .color-verde;
 }
 .logo{
     max-width: 200px;
@@ -43,8 +49,7 @@ footer{
     font-size: 10px;
     color: $color-text;
     a{
-        width: 60px;
-        height: 60px;
+        @include sizes(60px,60px ,$color-text );
         text-decoration: none;
         font-size: 28px;
         line-height: 60px;
@@ -65,8 +70,9 @@ footer{
     border: none;
 }
 .card-img-top{
-    width: 70%;
-    height: 30vh;
+    @include sizes(30vh,70%,none);
+    // width: 70%;
+    // height: 30vh;
 }
 .mapa{
     margin-bottom: 50px;
@@ -80,8 +86,9 @@ footer{
       flex-direction: column;
     }
     .hola {
-      width: 20%;
-      height: 50vh;
+      @include sizes(50vh,20%,none);
+    //   width: 20%;
+    //   height: 50vh;
       align-items: flex-start;
     }
     .hola .navbar-brand {
